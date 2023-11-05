@@ -1,4 +1,4 @@
-const apikey = "Your-API-Key";
+const apikey = "Your_API_Key";
 
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
 
@@ -14,12 +14,14 @@ async function checkweather(){
             const response= await fetch(apiUrl + "delhi" + `&appid=${apikey}`)
             console.log("Fetching...")  
             var data = await response.json();
+            console.log(data)
         }
-
+        
         else{
             const response= await fetch(apiUrl + search.value+ `&appid=${apikey}`)
             console.log("Fetching...")  
             var data = await response.json();
+            console.log(data)
 
         }
 
@@ -42,7 +44,12 @@ async function checkweather(){
             else if(weather=="Smoke"){
                 weather_icon.src='images/mist.png'
             }
+                        
             
+            else if(weather=="Mist"){
+                weather_icon.src='images/mist.png'
+            }
+
             
             else if(weather=="Clouds"){
                 weather_icon.src='images/clouds.png'
