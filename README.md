@@ -22,6 +22,7 @@ The repository is organized by day, with a separate folder for each day's projec
 
 - [Day 1: Weather App](./Day01/)
 - [Day 2: Digital Clock](./Day02/)
+- [Day 2: QR Generator](./Day03/)
 
 
 ## Getting Started
