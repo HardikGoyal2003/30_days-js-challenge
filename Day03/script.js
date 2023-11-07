@@ -9,7 +9,7 @@ function generate(){
     if(qr_txt.value!=""){
         qr_img.src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + qr_txt.value
         imgbox.classList.add('show-img')
-        qr_download.href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + qr_txt.value + ".jpg"
+        qr_download.href="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + qr_txt.value 
     }
     
     else{
