@@ -21,6 +21,7 @@ The repository is organized by day, with a separate folder for each day's projec
 ## Table of Contents
 
 - [Day 1: Weather App](./Day01/)
+- [Day 2: Digital Clock](./Day02/)
 
 
 ## Getting Started
