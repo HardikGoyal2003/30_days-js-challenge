@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins,sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ddd;
+}
+
+.container{
+    margin: 200px auto 0;
+    position: relative;
+    background-image: url(images/social-image.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 233px;
+    width: 430px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+.container .fa-heart{
+    font-size: 30px;
+    position: relative;
+    top: 40%;
+    left:50% ;
+    opacity: 0;
+}
+
+.active{
+    animation: animate 0.8s linear forwards;
+}
+
+@keyframes animate{
+    30%{
+        opacity:1;
+        font-size: 50px;
+    }
+
+    50%{
+        opacity:1;
+        font-size: 40px;
+    }
+
+    70%{
+        opacity:1;
+        font-size: 30px;
+    }
+
+    80%{
+        opacity:1;
+        font-size: 40px;
+    }
+
+    90%{
+        opacity:1;
+        font-size: 50px;
+    }    
+
+}
