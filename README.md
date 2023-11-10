@@ -25,6 +25,7 @@ The repository is organized by day, with a separate folder for each day's projec
 - [Day 3: QR Generator](./Day03/)
 - [Day 4: Calculator](./Day04/)
 - [Day 5: Double  Click Like](./Day05/)
+- [Day 6: Email Subscription](./Day06/)
 
 
 ## Getting Started
