@@ -26,6 +26,8 @@ The repository is organized by day, with a separate folder for each day's projec
 - [Day 4: Calculator](./Day04/)
 - [Day 5: Double  Click Like](./Day05/)
 - [Day 6: Email Subscription](./Day06/)
+- [Day 7: PopUp Feature](./Day07/)
+- [Day 8: Music Player](./Day08/)
 
 
 ## Getting Started
