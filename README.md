@@ -28,6 +28,9 @@ The repository is organized by day, with a separate folder for each day's projec
 - [Day 6: Email Subscription](./Day06/)
 - [Day 7: PopUp Feature](./Day07/)
 - [Day 8: Music Player](./Day08/)
+- [Day 9: Quote Generator](./Day09/)
+- [Day 10: Toast Notification Feature](./Day10/)
+- [Day 11: Drag & Drop Feature](./Day11/)
 
 
 ## Getting Started
