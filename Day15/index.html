@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="side">
+        <i class="fa-solid fa-bars" onclick="hide_side()"></i>
+        <h1>Customizable Options</h1>
+        <pre>Length : 12</pre><input type="range" min="0" max="50"  value="12" onmousemove="slide_value(0,this.value)">
+        <pre>A-Z</pre><input type="range" min="0" max="26"  value="26" onmousemove="slide_value(1,this.value)">
+        <pre>a-z</pre><input type="range" min="0" max="26" value="26" onmousemove="slide_value(2,this.value)">
+        <pre>0-9</pre><input type="range" min="0" max="10" value="10" onmousemove="slide_value(3,this.value)">
+        
+        <!-- !, @, #, $, %, ^, &, or * -->
+        <div class="chars">
+            <h3>Special Char</h3>
+            <div><input type="checkbox" value="!"><p>!</p></div>
+            <div><input type="checkbox" value="@"><p>@</p></div>
+            <div><input type="checkbox" value="#"><p>#</p></div>
+            <div><input type="checkbox" value="$"><p>$</p></div>
+            <div><input type="checkbox" value="%"><p>%</p></div>
+            <div><input type="checkbox" value="^"><p>^</p></div>
+            <div><input type="checkbox" value="&"><p>&</p></div>
+            <div><input type="checkbox" value="*"><p>*</p></div>
+        </div>
+
+        <button onclick="set_done()">Done!!</button>
+
+    </div>
+    
+    <div class="container">
+        <h1>Generate a <br><span>Random Password</span></h1>
+        <div class="display">
+            <input type="text" id="password" placeholder="Password">
+            <img src="images/copy.png" onclick="copy()">
+        </div>
+        <button onclick="create_passkey()" id="btn_1"><img src="images/generate.png">Generate Password</button>
+        <button onclick="show_side()"><img src="images/custom.png">Customize Password</button>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
