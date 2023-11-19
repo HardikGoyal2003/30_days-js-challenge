@@ -31,6 +31,10 @@ The repository is organized by day, with a separate folder for each day's projec
 - [Day 9: Quote Generator](./Day09/)
 - [Day 10: Toast Notification Feature](./Day10/)
 - [Day 11: Drag & Drop Feature](./Day11/)
+- [Day 12: To-Do App](./Day12/)
+- [Day 13: Password Hide & Show Feature](./Day13/)
+- [Day 14: Password Strength Indicator](./Day14/)
+- [Day 15: Random Password Generator](./Day15/)
 
 
 ## Getting Started
