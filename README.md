@@ -35,6 +35,8 @@ The repository is organized by day, with a separate folder for each day's projec
 - [Day 13: Password Hide & Show Feature](./Day13/)
 - [Day 14: Password Strength Indicator](./Day14/)
 - [Day 15: Random Password Generator](./Day15/)
+- [Day 16: Stopwatch](./Day16/)
+- [Day 17: Quiz App](./Day17/)
 
 
 ## Getting Started
