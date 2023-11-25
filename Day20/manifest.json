@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Color Picker",
+    "version": "1.0",
+    "description": "An extension that allows users to easily extract and copy colors from web pages using a color picker.",
+    "action":{
+        "default_popup":"index.html"
+    },
+    "icons": {
+      "16": "images/icon16.png",
+      "32": "images/icon32.png",
+      "128": "images/icon128.png"
+    }
+  }
+  
