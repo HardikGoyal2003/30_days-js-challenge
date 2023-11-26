@@ -5,13 +5,20 @@ const head=document.querySelector('.color_collection')
 let picked_colors=JSON.parse(localStorage.getItem("pickedColors") || "[]")
 
 function copyColor(elem) {
-        console.log(elem)
         navigator.clipboard.writeText(elem.dataset.color)
         elem.src='images/tick.png'
         
         setTimeout(() => {
                 elem.src='images/copy.png'
         }, 5000);
+}
+
+function deleteColor(elem) {
+        console.log(elem.parentNode)
+        const i = picked_colors.indexOf(elem.dataset.color)
+        picked_colors.splice(i,1)
+        localStorage.setItem("pickedColors",JSON.stringify(picked_colors))
+        show(ct=0)
 
 }
 
@@ -29,12 +36,17 @@ function show(ct) {
             <span class="num">${++ct}.</span>
             <span class="rect" style="background-color:${c}; border: 1px solid ${c == '#ffffff' ? "#ccc" : c };"></span>
             <span class="value">${c}</span>
-            <img src='images/copy.png' data-color=${c}>
+            <img src='images/delete.png' data-color=${c} class="delete">
+            <img src='images/copy.png' data-color=${c} class="copy">
         </li>
     `).join("")
     
-    document.querySelectorAll('.color').forEach(li => {
-            li.addEventListener('click',e=>copyColor(e.currentTarget.querySelector('img')))
+        document.querySelectorAll('.copy').forEach(copy_icon => {
+            copy_icon.addEventListener('click',e=>copyColor(e.currentTarget))
+    });
+    
+        document.querySelectorAll('.delete').forEach(delete_icon => {
+            delete_icon.addEventListener('click',e=>deleteColor(e.currentTarget))
     });
 }
 
@@ -42,6 +54,7 @@ function show(ct) {
 show(ct=0)
 
 async function activateEye(){
+        document.body.style.display="none"
         try {
                 const eyeDropper = new EyeDropper()
                 const response = await eyeDropper.open()
