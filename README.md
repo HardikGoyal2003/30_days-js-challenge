@@ -42,7 +42,7 @@ The repository is organized by day, with a separate folder for each day's projec
 - [Day 20: Color Picker- Chrome Extension](./Day20/)
 - [Day 21: Launching Soon Page](./Day21/)
 - [Day 22: Text to Speech Converter](./Day22/)
-- [Day 23: Image Search Engine](./Day23/)
+- [Day 23: Notes App](./Day23/)
 
 ## Getting Started
 
