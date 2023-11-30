@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verfication Form</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <i class="bx bxs-check-shield"></i>
+    </header>
+    <h3>OTP Verfication</h3>
+    <h4>Enter OTP code sent to <span>+91 xxxxx xx589 </span></h4>
+    
+    <form action="#">
+      <div class="i_field">
+        <input type="number" >
+        <input type="number" disabled>
+        <input type="number" disabled>
+        <input type="number" disabled>
+      </div>
+      <h5>Didn't recieved the OTP?</h5>
+      <h6 onclick="generateOtp()">Resend OTP</h6>
+      <button onclick="open_pop()">Verify OTP</button>
+      <h5 style="color: red; display: none;">Incorrect OTP!!</h5>
+    </form>
+  </div>
+
+  <div class="popup" id="popup">
+    <img src="images/tick.png">
+    <h2>Thank You!</h2>
+    <p>Your details has been successfully submitted. Thanks!</p>
+    <button type="button" onclick="cls_pop()">OK</button>
+  </div>
+
+  <div class="popup2" id="popup2">
+    <img src="images/remove.png">
+    <h2>Verfication Failed!</h2>
+    <p>Too many tries, Try Again Later!!</p>
+    <button type="button" onclick="cls_pop()">Close</button>
+  </div>
+
+  <div id="toastbox"></div>
+
+  <script src="script.js"></script>
+    
+</body>
+</html>
