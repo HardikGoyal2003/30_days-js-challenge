@@ -43,6 +43,11 @@ The repository is organized by day, with a separate folder for each day's projec
 - [Day 21: Launching Soon Page](./Day21/)
 - [Day 22: Text to Speech Converter](./Day22/)
 - [Day 23: Notes App](./Day23/)
+- [Day 24: Image Search Engine](./Day24/)
+- [Day 25: OTP Validation Form](./Day25/)
+- [Day 26: Color Gradient Generator](./Day26/)
+- [Day 27: Drawing App](./Day27/)
+- [Day 28: Pagination](./Day28/)
 
 ## Getting Started
 
