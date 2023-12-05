@@ -48,6 +48,8 @@ The repository is organized by day, with a separate folder for each day's projec
 - [Day 26: Color Gradient Generator](./Day26/)
 - [Day 27: Drawing App](./Day27/)
 - [Day 28: Pagination](./Day28/)
+- [Day 29: Image Editing App](./Day29/)
+- [Day 30: Video Player](./Day30/)
 
 ## Getting Started
 
